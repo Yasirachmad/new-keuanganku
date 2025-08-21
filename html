@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Keuangan Pertama</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="A_flat-style_digital_illustration_welcomes_users_t.png" alt="Welcome Illustration" class="illustration">
+    <h1 id="judul">halo ini aplikasi pertama keuangan saya</h1>
+    <p id="subjudul">terima kasih atas kunjungan dan apresiasinya</p>
+
+    <form id="formTransaksi">
+      <input type="text" id="deskripsi" placeholder="Deskripsi transaksi" required>
+      <input type="number" id="jumlah" placeholder="Jumlah (Rp)" required>
+      <select id="tipe">
+        <option value="pemasukan">Pemasukan</option>
+        <option value="pengeluaran">Pengeluaran</option>
+      </select>
+      <button type="submit">Tambah</button>
+    </form>
+
+    <h2>Daftar Transaksi</h2>
+    <ul id="daftarTransaksi"></ul>
+
+    <h3>Total Saldo: Rp <span id="saldo">0</span></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
